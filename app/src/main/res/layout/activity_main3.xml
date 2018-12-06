@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:orientation="vertical"
+    android:background="@drawable/fondotienda">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/muebleria" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/banderines"
+        android:layout_marginTop="-30dp"/>
+
+    <Button
+        android:id="@+id/propietario"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:minWidth="10dp"
+        android:text="PROPIETARIO"
+        android:background="@drawable/fondomo1"
+        android:textSize="30dp"
+        android:textColor="#ed8080"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/inmueble"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:minWidth="10dp"
+        android:text="INMUEBLE"
+        android:background="@drawable/fondomo1"
+        android:textSize="30dp"
+        android:textColor="#ed8080"
+        android:layout_gravity="center_horizontal"/>
+    <ImageView
+        android:layout_width="149dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/globos2" />
+
+</LinearLayout>

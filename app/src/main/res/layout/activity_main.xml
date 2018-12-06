@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondomo1">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/propietario" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/banderines"
+        android:layout_marginTop="-25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#317168"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Numero entero"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/idd"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#317168"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/nombre"
+        android:ems="15"
+        android:hint="Nombre propietario"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOMICILIO"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#317168"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/domicilio"
+        android:ems="15"
+        android:hint="Domicilio de propietario"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TELEFONO"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#317168"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tel"
+        android:ems="15"
+        android:hint="Telefono propietario"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/consultar"
+        android:text="CONSULTAR"
+        android:textColor="#e944ac"
+        android:background="#8ec7a5"/>
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+        android:id="@+id/borrar"
+        android:text="ELIMINAR"
+        android:textColor="#e944ac"
+        android:background="#8ec7a5"/>
+
+    </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal">
+
+             <Button
+                 android:id="@+id/actualizar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="#8ec7a5"
+                 android:text="ACTUALIZAR"
+                 android:textColor="#e944ac" />
+
+             <Button
+                 android:id="@+id/insertar"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:background="#8ec7a5"
+                 android:text="INSERTAR"
+                 android:textColor="#e944ac" />
+
+         </LinearLayout>
+         <Button
+             android:layout_marginTop="10dp"
+             android:id="@+id/limpiar"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:background="#c0ffd9"
+             android:text="LIMPIAR"
+             android:textColor="#e944ac"
+             android:layout_gravity="center_horizontal"/>
+
+         <ImageButton
+             android:layout_marginTop="10dp"
+             android:id="@+id/b2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:background="#c0ffd9"
+             android:src="@drawable/regresar"
+             android:textColor="#e944ac"
+             />
+
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>

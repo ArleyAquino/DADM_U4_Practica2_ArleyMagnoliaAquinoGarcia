@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@drawable/fondomo2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/inmueble" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:src="@drawable/banderines"
+                android:layout_marginTop="-25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="#317168"
+                android:textSize="25dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:hint="Numero entero"
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/idd"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOMICILIO"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="#317168"
+                android:textSize="25dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/domicilio"
+                android:ems="15"
+                android:hint="Domicilio de propietario"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIO DE VENTA"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="#317168"
+                android:textSize="25dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/precioventa"
+                android:ems="15"
+                android:hint="Precio de venta de inmueble"
+                android:inputType="number"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRECIO DE RENTA"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="#317168"
+                android:textSize="25dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/preciorenta"
+                android:ems="15"
+                android:hint="Precio de renta de inmueble"
+                android:inputType="number"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FECHA DE TRANSACCION "
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="#317168"
+                android:textSize="25dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fecha"
+                android:ems="15"
+                android:hint="yyyy/mm/dd"
+                android:inputType="date"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROPIETARIO "
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="#317168"
+                android:textSize="25dp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idp">
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/consultar"
+                    android:text="CONSULTAR"
+                    android:textColor="#e944ac"
+                    android:background="#8ec7a5"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/borrar"
+                    android:text="ELIMINAR"
+                    android:textColor="#e944ac"
+                    android:background="#8ec7a5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/actualizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#8ec7a5"
+                    android:text="ACTUALIZAR"
+                    android:textColor="#e944ac" />
+
+                <Button
+                    android:id="@+id/insertar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="#8ec7a5"
+                    android:text="INSERTAR"
+                    android:textColor="#e944ac" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/limpiar"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#c0ffd9"
+                android:text="LIMPIAR"
+                android:textColor="#e944ac"
+                android:layout_gravity="center_horizontal"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/b1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#8ec7a5"
+                android:text="PROPIETARIO"
+                android:textColor="#e944ac"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
